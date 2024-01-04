@@ -1,0 +1,78 @@
+
+p
+java:S1192«"MDefine a constant instead of duplicating this literal "UNAUTHORISED" 3 times.(¡Š¤ùÿÿÿÿ8ãÿœÍ1
+…
+java:S1192æ"gDefine a constant instead of duplicating this literal "date is must be less than current date" 3 times.(ÁÖıŸ8äÿœÍ1
+~
+java:S1488¨"`Immediately return this expression instead of assigning it to the temporary variable "employee".(Ì‘ˆ8çÿœÍ1
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(±¨Ãæ8îÿœÍ1
+¨
+java:S1862à"„This branch can not be reached because the condition duplicates a previous condition in the same sequence of "if/else if" statements(€¼Šïÿÿÿÿÿ8îÿœÍ1
+¨
+java:S1862Ú"„This branch can not be reached because the condition duplicates a previous condition in the same sequence of "if/else if" statements(ÎÄÓüÿÿÿÿ8ïÿœÍ1
+g
+java:S3973ú"IUse indentation to denote the code conditionally executed by this "else".(ÔÍØ8ğÿœÍ1
+g
+java:S3973‡"IUse indentation to denote the code conditionally executed by this "else".(ÔÍØ8ğÿœÍ1
+_
+java:S6813<"BRemove this field injection and use constructor injection instead.(êæÄŞ8Œ”ÿœÍ1
+_
+java:S6813>"BRemove this field injection and use constructor injection instead.(êæÄŞ8Œ”ÿœÍ1
+_
+java:S6813@"BRemove this field injection and use constructor injection instead.(êæÄŞ8Œ”ÿœÍ1
+_
+java:S6813B"BRemove this field injection and use constructor injection instead.(êæÄŞ8Œ”ÿœÍ1
+_
+java:S6813E"BRemove this field injection and use constructor injection instead.(êæÄŞ8Œ”ÿœÍ1
+_
+java:S6813H"BRemove this field injection and use constructor injection instead.(êæÄŞ8Œ”ÿœÍ1
+]	java:S125P"<This block of commented-out lines of code should be removed.(Ì–Ö´ÿÿÿÿÿ8“”ÿœÍ1
+u
+java:S3776Ü"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(ÿõÕ£úÿÿÿÿ8¢”ÿœÍ1
+X	java:S125ß"<This block of commented-out lines of code should be removed.(Ãáİ}8£”ÿœÍ1
+X	java:S125ı"<This block of commented-out lines of code should be removed.(ô…ş8§”ÿœÍ1
+u
+java:S6204€"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(Ìö úÿÿÿÿ8§”ÿœÍ1
+o
+java:S3776ˆ"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(Ã»à18¨”ÿœÍ1
+O
+java:S1172ˆ"2Remove this unused method parameter "employeeDto".(Ã»à18¨”ÿœÍ1
+X
+java:S1751§"5Remove this "throw" statement or make it conditional.(Íˆ­µÿÿÿÿÿ8­”ÿœÍ1
+u
+java:S6204ª"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(Ìö úÿÿÿÿ8­”ÿœÍ1
+u
+java:S6204´"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(äÈİ­úÿÿÿÿ8®”ÿœÍ1
+Y	java:S125º"<This block of commented-out lines of code should be removed.(©ûŒ‘8¯”ÿœÍ1
+u
+java:S6204Â"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(÷âŠúÿÿÿÿ8°”ÿœÍ1
+F	java:S108í")Either remove or fill this block of code.(üØô8º”ÿœÍ1
+^	java:S125û"<This block of commented-out lines of code should be removed.(×©¸‹ùÿÿÿÿ8»”ÿœÍ1
+^	java:S125„"<This block of commented-out lines of code should be removed.(‹õ¥üÿÿÿÿ8»”ÿœÍ1
+u
+java:S3776º"RRefactor this method to reduce its Cognitive Complexity from 36 to the 15 allowed.(áÍù×úÿÿÿÿ8À”ÿœÍ1
+Y	java:S125Ğ"<This block of commented-out lines of code should be removed.(øÁ™„8É”ÿœÍ1
+p
+java:S3776ï"RRefactor this method to reduce its Cognitive Complexity from 41 to the 15 allowed.(ëÓó©8Ï”ÿœÍ1
+p
+java:S1871Í"MThis branch's code block is the same as the block for the branch on line 586.(øû¤Üùÿÿÿÿ8İ”ÿœÍ1
+u
+java:S6204Ü"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(¬ã‘Œÿÿÿÿÿ8à”ÿœÍ1
+p
+java:S1871æ"MThis branch's code block is the same as the block for the branch on line 611.(øû¤Üùÿÿÿÿ8á”ÿœÍ1
+p
+java:S6204å"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(’‰ÚÆ8â”ÿœÍ1
+p
+java:S6204è"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(’‰ÚÆ8â”ÿœÍ1
+`
+java:S1854»"=Remove this useless assignment to local variable "employees".(œŞ•Çüÿÿÿÿ8å”ÿœÍ1
+^	java:S125”"<This block of commented-out lines of code should be removed.(‰¸¢Õøÿÿÿÿ8æ”ÿœÍ1
+u
+java:S6204·"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(¬ã‘Œÿÿÿÿÿ8æ”ÿœÍ1
+u
+java:S6204À"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(Ï‰¡•úÿÿÿÿ8ç”ÿœÍ1
+Ñ
+java:S1130Ğ"­Remove the declaration of thrown exception 'com.example.organizationEmployeeProjectManagement.exception.PatternNotMatchException', as it cannot be thrown from method's body.(”ìõÿÿÿÿÿ8ê”ÿœÍ1
+^	java:S125…"<This block of commented-out lines of code should be removed.(ØÊÄùÿÿÿÿ8ğ”ÿœÍ1
+f
+java:S1144ó"CRemove this unused private "convertOrganizationDtoToEntity" method.(óÎí±ıÿÿÿÿ8ù”ÿœÍ1

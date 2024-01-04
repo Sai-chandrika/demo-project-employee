@@ -1,0 +1,23 @@
+
+h
+java:S1192K"MDefine a constant instead of duplicating this literal "Unauthorised" 3 times.(µíš†øÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÕÍ’ªÿÿÿÿÿ
+_
+java:S6813."BRemove this field injection and use constructor injection instead.(êæÄŞ8ï¦¶˜Í1
+_
+java:S68130"BRemove this field injection and use constructor injection instead.(êæÄŞ8ğ¦¶˜Í1
+_
+java:S68132"BRemove this field injection and use constructor injection instead.(êæÄŞ8ñ¦¶˜Í1
+_
+java:S68134"BRemove this field injection and use constructor injection instead.(êæÄŞ8ñ¦¶˜Í1
+h
+java:S3776Ÿ"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(M
+P	java:S125"<This block of commented-out lines of code should be removed.(Õ²‚l
+W	java:S125Ù"<This block of commented-out lines of code should be removed.(µÆñÕıÿÿÿÿ
+W	java:S125æ"<This block of commented-out lines of code should be removed.(µÆñÕıÿÿÿÿ
+i
+java:S3776ÿ"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(›ºØê
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8Ë¨¶˜Í1
+Z
+java:S1128""8Remove this unused import 'java.util.stream.Collectors'.(Óóº´úÿÿÿÿ8Ì¨¶˜Í1

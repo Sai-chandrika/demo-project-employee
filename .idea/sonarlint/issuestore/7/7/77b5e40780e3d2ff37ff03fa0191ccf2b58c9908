@@ -1,0 +1,16 @@
+
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(’äÿÿÿÿÿ8ä èšÍ1
+~	java:S116 "bRename this field "PUBLIC_RESOURCE_AND_URL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œô—ğ8õ èšÍ1
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8õ èšÍ1
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8õ èšÍ1
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8õ èšÍ1
+r
+java:S3305"PInject this field value directly into "configure", the only method that uses it.(ÆÜ©ÿøÿÿÿÿ8ö èšÍ1
+r
+java:S3305"PInject this field value directly into "configure", the only method that uses it.(ñ°Êƒÿÿÿÿÿ8ö èšÍ1
+X	java:S125/"<This block of commented-out lines of code should be removed.(«ÿØ¼8€¡èšÍ1
+S
+java:S1611K"1Remove the parentheses around the "web" parameter(­’¸¢şÿÿÿÿ8„¡èšÍ1

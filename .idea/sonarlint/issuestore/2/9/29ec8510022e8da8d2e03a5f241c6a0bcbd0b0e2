@@ -1,0 +1,20 @@
+
+t
+java:S22930"YReplace the type specification in this constructor call with the diamond operator ("<>").(Şıµ¾úÿÿÿÿ
+t
+java:S22936"YReplace the type specification in this constructor call with the diamond operator ("<>").(á¤ú€ÿÿÿÿÿ
+o
+java:S22938"YReplace the type specification in this constructor call with the diamond operator ("<>").(û¡ÿ
+o
+java:S2293:"YReplace the type specification in this constructor call with the diamond operator ("<>").(ø‚¥
+t
+java:S2293<"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÜÙÊÉûÿÿÿÿ
+n
+java:S2293>"YReplace the type specification in this constructor call with the diamond operator ("<>").(†ë1
+t
+java:S2293D"YReplace the type specification in this constructor call with the diamond operator ("<>").(šŒ¸¯üÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(õ¡èš
+l
+java:S1128"VRemove this unused import 'org.springframework.security.core.AuthenticationException'.(¤ò›¿
+W
+java:S11443"<Remove this unused private "composeRunTimeException" method.(Ä²æµÿÿÿÿÿ

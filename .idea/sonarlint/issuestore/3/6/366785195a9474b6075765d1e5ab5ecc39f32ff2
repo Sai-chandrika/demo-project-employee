@@ -1,0 +1,12 @@
+
+r
+java:S26291"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(Û‡ïƒ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(’äÿÿÿÿÿ
+R
+java:S2387#"7"logger" is the name of a field in "GenericFilterBean".(Øä“õüÿÿÿÿ
+E	java:S106,"+Replace this use of System.out by a logger.(¥–ªåùÿÿÿÿ
+W
+java:S34571"AFormat specifiers should be used instead of string concatenation.(Û‡ïƒ
+©
+java:S1130G"Remove the declaration of thrown exception 'com.fasterxml.jackson.core.JsonProcessingException' which is a subclass of 'java.io.IOException'.(ÄŞ‡öıÿÿÿÿ
+?	java:S106O"+Replace this use of System.out by a logger.(ñ›ù

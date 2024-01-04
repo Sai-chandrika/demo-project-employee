@@ -1,0 +1,30 @@
+
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‡˜È¯8ÖŞ„š²1
+W
+java:S1118":Add a private constructor to hide the implicit public one.(ŒÚ²8ğŞ„š²1
+P
+java:S1172W".Remove this unused method parameter "context".(©²Ààıÿÿÿÿ8şŞ„š²1
+i
+java:S5998_"LRefactor this repetition that can lead to a stack overflow for large inputs.(„Äçê8…ß„š²1
+Y
+java:S6353_"<Use concise character class syntax '\\d' instead of '[0-9]'.(„Äçê8†ß„š²1
+Y
+java:S6353_"<Use concise character class syntax '\\d' instead of '[0-9]'.(„Äçê8†ß„š²1
+Y
+java:S6353_"<Use concise character class syntax '\\d' instead of '[0-9]'.(„Äçê8ˆß„š²1
+Y
+java:S6353_"<Use concise character class syntax '\\d' instead of '[0-9]'.(„Äçê8Šß„š²1
+R
+java:S6035e"0Replace this alternation with a character class.(Şøìãüÿÿÿÿ8ß„š²1
+E
+java:S6396e"#Remove this unnecessary quantifier.(Şøìãüÿÿÿÿ8ß„š²1
+^
+java:S6353e"<Use concise character class syntax '\\d' instead of '[0-9]'.(Şøìãüÿÿÿÿ8ß„š²1
+c
+java:S1128"ARemove this unused import 'org.apache.poi.ss.usermodel.CellType'.(û×ñ¤ùÿÿÿÿ8¤­¶˜Í1
+f
+java:S1128"IRemove this unused import 'org.apache.poi.ss.util.NumberToTextConverter'.(‚ˆË¡8§­¶˜Í1
+`
+java:S1128"CRemove this unused import 'org.apache.poi.xssf.usermodel.XSSFCell'.(Ñƒöğ8©­¶˜Í1
+q
+java:S5843_"TSimplify this regular expression to reduce its complexity from 24 to the 20 allowed.(„Äçê8¡ß„š²1

@@ -1,0 +1,13 @@
+
+Y
+java:S26294"7Use the built-in formatting to construct this argument.(‘˜êòøÿÿÿÿ8Ğ•¯šÍ1
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(’äÿÿÿÿÿ
+T
+java:S2387'"7"logger" is the name of a field in "GenericFilterBean".(ºÆ8æ–¯šÍ1
+c
+java:S34574"AFormat specifiers should be used instead of string concatenation.(‘˜êòøÿÿÿÿ8š—¯šÍ1
+?	java:S106@"+Replace this use of System.out by a logger.(ñ›ù
+\
+java:S1128":Remove this unused import 'com.nimbusds.jwt.JWTClaimsSet'.(½—ªÂşÿÿÿÿ8²˜¯šÍ1
+H
+java:S1128"+Remove this unused import 'java.util.Date'.(¸…¼ü8²˜¯šÍ1
