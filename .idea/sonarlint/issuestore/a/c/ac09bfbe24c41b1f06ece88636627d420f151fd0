@@ -1,0 +1,29 @@
+
+n
+java:S1192t"SDefine a constant instead of duplicating this literal "not authenticated " 3 times.(¡œ·üÿÿÿÿ
+v
+java:S1488X"`Immediately return this expression instead of assigning it to the temporary variable "employee".(Ì‘ˆ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(úë…
+_
+java:S3973d"IUse indentation to denote the code conditionally executed by this "else".(ÔÍØ
+X
+java:S6813$"BRemove this field injection and use constructor injection instead.(êæÄŞ
+X
+java:S6813&"BRemove this field injection and use constructor injection instead.(êæÄŞ
+X
+java:S6813("BRemove this field injection and use constructor injection instead.(êæÄŞ
+X
+java:S6813-"BRemove this field injection and use constructor injection instead.(êæÄŞ
+h
+java:S37769"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(îš×Î
+n
+java:S6204"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(’ì€½øÿÿÿÿ
+i
+java:S6204…"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(×ƒİË
+W	java:S125Ë"<This block of commented-out lines of code should be removed.(ØÊÄùÿÿÿÿ
+i
+java:S6204×"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(¦Ïµ”
+ˆ
+java:S1128"mRemove this unused import 'com.example.organizationEmployeeProjectManagement.exception.NullPointerException'.(ş»¹õıÿÿÿÿ
+
+java:S1128"dRemove this unused import 'com.example.organizationEmployeeProjectManagement.validation.Validation'.(ñ°‰Šüÿÿÿÿ

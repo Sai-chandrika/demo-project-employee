@@ -1,5 +1,7 @@
 package com.example.organizationEmployeeProjectManagement.security.dto;
 
+import com.example.organizationEmployeeProjectManagement.security.dto.organizationDto.OrganizationDto;
+import com.example.organizationEmployeeProjectManagement.security.entity.organization.Organization;
 import com.example.organizationEmployeeProjectManagement.security.enums.roletype.RoleType;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -22,4 +24,5 @@ public class EmployeeSearchDto {
     private Long id;
     private String name;
     private RoleType roleType;
+    private OrganizationDto organization;
 }

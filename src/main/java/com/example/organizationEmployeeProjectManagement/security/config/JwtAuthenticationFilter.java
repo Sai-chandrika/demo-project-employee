@@ -42,7 +42,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
     protected void doFilterInternal(HttpServletRequest req, HttpServletResponse res, FilterChain filter)
             throws ServletException, IOException {
         try {
-            String authToken = req.getHeader("Authorization");
+            String authToken = extractAuthToken(req.getHeader("Authorization"));
             String username = jwtTokenUtil.parseToken(authToken);
             Employee user = appUserRepo.findByEmail(username);
             if (user != null) {
@@ -63,6 +63,13 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             writer.write(jsonRespString);
             System.out.println("===============================");
         }
+    }
+
+    private String extractAuthToken(String authorizationHeader) {
+        if (authorizationHeader != null && authorizationHeader.startsWith("Bearer")) {
+            return authorizationHeader.substring(7); // Will be useful with Swagger
+        }
+        return authorizationHeader; // Token not found or header value format is incorrect
     }
 }
 

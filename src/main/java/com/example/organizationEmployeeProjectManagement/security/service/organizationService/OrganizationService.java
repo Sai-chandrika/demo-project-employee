@@ -15,7 +15,7 @@ public interface OrganizationService {
     GenericResponse delete(Long id);
 
     GenericResponse getAll(int offset,int pageNo);
-    public GenericResponse getAll();
+     GenericResponse getAll();
 
     GenericResponse getById(Long id);
 }

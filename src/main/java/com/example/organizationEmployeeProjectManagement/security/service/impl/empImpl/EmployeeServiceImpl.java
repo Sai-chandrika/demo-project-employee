@@ -29,10 +29,7 @@ import com.example.organizationEmployeeProjectManagement.security.service.filter
 import com.nimbusds.jose.JOSEException;
 import jakarta.persistence.EntityGraph;
 import jakarta.persistence.EntityManager;
-import jakarta.persistence.criteria.CriteriaBuilder;
-import jakarta.persistence.criteria.CriteriaQuery;
-import jakarta.persistence.criteria.Predicate;
-import jakarta.persistence.criteria.Root;
+import jakarta.persistence.criteria.*;
 import lombok.SneakyThrows;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
@@ -195,23 +192,49 @@ public class EmployeeServiceImpl implements EmployeeService {
 
 
 
+//    public GenericResponse saveEmployee(EmployeeDto employeeDto) throws PatternNotMatchException {
+//        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+//        if (authentication != null) {
+//            Employee employee = (Employee) authentication.getPrincipal();
+//            if (employee != null) {
+//                if (employee.getRoleType().equals(RoleType.SUPER_ADMIN)) {
+//                    return superAdmin(employeeDto);
+//                } else if (employee.getRoleType().equals(RoleType.ADMIN) && employee.getOrganization().getId().equals(employeeDto.getOrganization().getId())) {
+//                    return admin(employeeDto);
+//                } else if (employee.getRoleType().equals(RoleType.MANAGER) && employee.getOrganization().getId().equals(employeeDto.getOrganization().getId())) {
+//                    return manager(employeeDto);
+//                } else {
+//                    throw new AuthenticationBasedException("Unauthorised !!");
+//                }
+//            }
+//        }
+//        return null;
+//    }
+    @Override
     public GenericResponse saveEmployee(EmployeeDto employeeDto) throws PatternNotMatchException {
-        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-        if (authentication != null) {
-            Employee employee = (Employee) authentication.getPrincipal();
-            if (employee != null) {
-                if (employee.getRoleType().equals(RoleType.SUPER_ADMIN)) {
-                    return superAdmin(employeeDto);
-                } else if (employee.getRoleType().equals(RoleType.ADMIN) && employee.getOrganization().getId().equals(employeeDto.getOrganization().getId())) {
-                    return admin(employeeDto);
-                } else if (employee.getRoleType().equals(RoleType.MANAGER) && employee.getOrganization().getId().equals(employeeDto.getOrganization().getId())) {
-                    return manager(employeeDto);
-                } else {
-                    throw new AuthenticationBasedException("Unauthorised !!");
-                }
-            }
-        }
-        return null;
+      Employee employee;
+      if(employeeDto.getId()!=null){
+          return null;
+      }else{
+          employee=new Employee();
+          employee.setName(employeeDto.getName());
+          Optional<Employee> optionalContact = appUserRepo.getByContactNo(employeeDto.getContactNo());
+          if (optionalContact.isEmpty() || optionalContact.get().getId().equals(employeeDto.getId())) {
+              employee.setContactNo(employeeDto.getContactNo());
+          } else throw new DuplicateValueException(" mobile number is already existed");
+          Optional<Employee> optional = Optional.ofNullable(appUserRepo.findByEmail(employeeDto.getEmail()));
+          if (optional.isEmpty() || optional.get().getId().equals(employeeDto.getId())) {
+              employee.setEmail(employeeDto.getEmail());
+          } else {
+              throw new DuplicateValueException("email is already existed!!");
+          }
+          employee.setPassword(bCryptPasswordEncoder.encode(employeeDto.getPassword()));
+          employee.setDateOfJoining(employeeDto.getDateOfJoining());
+          employee.setRoleType(employeeDto.getRoleType());
+          employee.setOrganization(organizationRepo.findById(employeeDto.getOrganization().getId()).orElseThrow(()->new NullPointerException("org id is not found")));
+          appUserRepo.save(employee);
+          return new GenericResponse(HttpStatus.OK.value(), "employee save successfully", convertEmployeeEntityToDto(employee));
+      }
     }
 
 
@@ -788,6 +811,7 @@ return employeeDto;
             employeeSearchDto.setName(a.getName());
             employeeSearchDto.setId(a.getId());
             employeeSearchDto.setRoleType(a.getRoleType());
+            employeeSearchDto.setOrganization(convertOrganizationEntityToDto(organizationRepo.findById(employeeSearch.getOrganization()).orElseThrow(()->new NullPointerException("org is not found"))));
             employeeSearchDtos.add(employeeSearchDto);
         });
         return employeeSearchDtos;
@@ -795,13 +819,26 @@ return employeeDto;
 
 
 
+
+
     public List<Employee> searchEmployee(EmployeeSearch employeeSearch) {
         CriteriaBuilder criteriaBuilder = entityManager.getCriteriaBuilder();
         CriteriaQuery<Employee> query = criteriaBuilder.createQuery(Employee.class);
         Root<Employee> root = query.from(Employee.class);
+        Join<Employee, Organization> infoJoinAgent = root.join("organization", JoinType.INNER);
+
         List<Predicate> predicates = new LinkedList<>();
-        for(String  employee:employeeSearch.getName()){
+        if(employeeSearch.getName()!=null) {
+            for (String employee : employeeSearch.getName()) {
+//                predicates.add(criteriaBuilder.like(criteriaBuilder.lower(root.get("name")),  employee.toLowerCase() + "%"));
+//                predicates.add(criteriaBuilder.like(criteriaBuilder.lower(root.get("name")),   "%"+employee.toLowerCase()));
                 predicates.add(criteriaBuilder.like(criteriaBuilder.lower(root.get("name")), "%" + employee.toLowerCase() + "%"));
+            }
+        }
+        if (employeeSearch.getOrganization()!=null) {
+            Expression<Long> parentExpression = infoJoinAgent.get("id");
+            Predicate parentPredicate = parentExpression.in(employeeSearch.getOrganization());
+            predicates.add(parentPredicate);
         }
         Predicate[] predicateArray = new Predicate[predicates.size()];
         query.where(predicates.toArray(predicateArray));

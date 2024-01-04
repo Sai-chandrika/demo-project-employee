@@ -18,7 +18,7 @@ public class OrganizationController {
     @Autowired
     OrganizationService organizationService;
     @PostMapping("/save")
-    @PreAuthorize("hasAuthority('SUPER_ADMIN')")
+//    @PreAuthorize("hasAuthority('SUPER_ADMIN')")
     public GenericResponse save(@RequestBody OrganizationDto organizationDto){
         return organizationService.save(organizationDto);
     }

@@ -8,9 +8,9 @@ java:S6813"BRemove this field injection and use constructor injection instead.
 _
 java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8õ èšÍ1
 r
-java:S3305"PInject this field value directly into "configure", the only method that uses it.(ÆÜ©ÿøÿÿÿÿ8ö èšÍ1
-r
 java:S3305"PInject this field value directly into "configure", the only method that uses it.(ñ°Êƒÿÿÿÿÿ8ö èšÍ1
-X	java:S125/"<This block of commented-out lines of code should be removed.(«ÿØ¼8€¡èšÍ1
+r
+java:S3305"PInject this field value directly into "configure", the only method that uses it.(ÆÜ©ÿøÿÿÿÿ8ö èšÍ1
+X	java:S1250"<This block of commented-out lines of code should be removed.(«ÿØ¼8€¡èšÍ1
 S
-java:S1611K"1Remove the parentheses around the "web" parameter(­’¸¢þÿÿÿÿ8„¡èšÍ1
+java:S1611L"1Remove the parentheses around the "web" parameter(­’¸¢þÿÿÿÿ8„¡èšÍ1

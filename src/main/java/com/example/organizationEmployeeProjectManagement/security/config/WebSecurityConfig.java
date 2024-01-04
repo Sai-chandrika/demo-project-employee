@@ -36,7 +36,8 @@ public class WebSecurityConfig {
             "/api/v1/employee/new_password",
             "/api/v1/employee/excel-upload-for-create-user",
             "/api/v1/employee/search/employee",
-            "/api/v1/save"
+            "/api/v1/employee/save",
+            "/api/v1/organization/save"
     };
 
 
