@@ -28,6 +28,37 @@ public class OrganizationEmployeeProjectManagementApplication {
 		SpringApplication.run(OrganizationEmployeeProjectManagementApplication.class, args);
 		OrganizationEmployeeProjectManagementApplication o=new OrganizationEmployeeProjectManagementApplication();
 		o.s();
+
+		System.out.println("*****************************************");
+		Integer a=100;
+		Integer b=100;
+		Integer c=500;
+		Integer d=500;
+
+		if(a==b){
+			System.out.println("a=b is correct");
+		}else {
+			System.out.println("a=b is  not correct");
+		}
+
+		if(c==d){
+			System.out.println("c=d is correct");
+		}else {
+			System.out.println("c=d is  not correct");
+		}
+
+		System.out.println("***********************************************************************************");
+
+		if(a.equals(b)){
+			System.out.println("a=b is correct");
+		}else {
+			System.out.println("a=b is  not correct");
+		}
+		if(c.equals(d)){
+			System.out.println("c=d is correct");
+		}else {
+			System.out.println("c=d is  not correct");
+		}
 	}
 	@Bean
 	public BCryptPasswordEncoder bCryptPasswordEncoder(){

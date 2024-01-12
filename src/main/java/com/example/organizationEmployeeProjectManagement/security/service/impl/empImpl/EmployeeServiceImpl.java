@@ -356,7 +356,6 @@ public GenericResponse idList(List<Long> ids) {
                 rowIndex++;
                 continue;
             }
-
             Iterator<Cell> cellIterator=row.iterator();
             int cellIndex=0;
             Employee resourse=new Employee();
@@ -819,7 +818,22 @@ return employeeDto;
 
 
 
-
+// public List<User> searchEmployee(UserBean employeeSearch) {
+//        CriteriaBuilder criteriaBuilder = entityManager.getCriteriaBuilder();
+//        CriteriaQuery<User> query = criteriaBuilder.createQuery(User.class);
+//        Root<User> root = query.from(User.class);
+//        List<Predicate> predicates = new LinkedList<>();
+//        if(employeeSearch.getUserId()!=null) {
+//                predicates.add(criteriaBuilder.like(criteriaBuilder.lower(root.get("userId")), "%" + employeeSearch.getUserId().toLowerCase() + "%"));
+//        }
+//        if (employeeSearch.getRole() != null) {
+//            predicates.add(criteriaBuilder.equal(root.get("role"), employeeSearch.getRole()));
+//        }
+//        Predicate[] predicateArray = new Predicate[predicates.size()];
+//        query.where(predicates.toArray(predicateArray));
+//        EntityGraph<User> entityGraph = entityManager.createEntityGraph(User.class);
+//        return entityManager.createQuery(query).setHint("javax.persistence.fetchgraph", entityGraph).getResultList();
+//    }
 
     public List<Employee> searchEmployee(EmployeeSearch employeeSearch) {
         CriteriaBuilder criteriaBuilder = entityManager.getCriteriaBuilder();
@@ -834,6 +848,9 @@ return employeeDto;
 //                predicates.add(criteriaBuilder.like(criteriaBuilder.lower(root.get("name")),   "%"+employee.toLowerCase()));
                 predicates.add(criteriaBuilder.like(criteriaBuilder.lower(root.get("name")), "%" + employee.toLowerCase() + "%"));
             }
+        }
+        if (employeeSearch.getRoleType() != null) {
+            predicates.add(criteriaBuilder.equal(root.get("roleType"), employeeSearch.getRoleType()));
         }
         if (employeeSearch.getOrganization()!=null) {
             Expression<Long> parentExpression = infoJoinAgent.get("id");

@@ -108,8 +108,6 @@ public class EmployeeController {
         return  userService.searchList(searchDto);
         }
 
-
-
 //    @GetMapping("/search-key/{key}/{offset}/{pageNo}")
 //    @PreAuthorize("hasAnyAuthority('SUPER_ADMIN','ADMIN','MANAGER','EMPLOYEE')")
 //    GenericResponse findBySearchKey(@PathVariable String key,@PathVariable int offset,@PathVariable int pageNo){

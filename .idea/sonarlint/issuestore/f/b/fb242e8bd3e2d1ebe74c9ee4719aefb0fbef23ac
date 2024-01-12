@@ -1,6 +1,6 @@
 
 …
-java:S1488‹"gImmediately return this expression instead of assigning it to the temporary variable "genericResponse".(Íæ˜ˆ8Ž’ˆšÍ1
+java:S1488‰"gImmediately return this expression instead of assigning it to the temporary variable "genericResponse".(Íæ˜ˆ8Ž’ˆšÍ1
 v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‹¢¯Ÿ8æ¥†šÍ1
 _
 java:S6813&"BRemove this field injection and use constructor injection instead.(êæÄÞ8ý¥†šÍ1
@@ -12,8 +12,8 @@ java:S6813,"BRemove this field injection and use constructor injection instead.
 java:S11305"xRemove the declaration of thrown exception 'com.nimbusds.jose.JOSEException', as it cannot be thrown from method's body.(³”Ž¥8ÕŒÎšÍ1
 š
 java:S11309"xRemove the declaration of thrown exception 'com.nimbusds.jose.JOSEException', as it cannot be thrown from method's body.(àÙâ¨üÿÿÿÿ8ÙŒÎšÍ1
-]	java:S125s"<This block of commented-out lines of code should be removed.(•›Êøøÿÿÿÿ8‰¦†šÍ1
-Y	java:S125’"<This block of commented-out lines of code should be removed.(ñ÷Šü8¥’ˆšÍ1
+]	java:S125q"<This block of commented-out lines of code should be removed.(•›Êøøÿÿÿÿ8‰¦†šÍ1
+Y	java:S125"<This block of commented-out lines of code should be removed.(ñ÷Šü8¥’ˆšÍ1
 k
 java:S1128"NRemove this unused import 'org.springframework.data.jpa.domain.Specification'.(¾ñÕÄ8üŒÎšÍ1
 f

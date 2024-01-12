@@ -79,3 +79,5 @@ bsrc/main/java/com/example/organizationEmployeeProjectManagement/security/config
 }src/main/java/com/example/organizationEmployeeProjectManagement/security/service/organizationService/OrganizationService.java,8/5/85dd42f467fa956f7ab8b9ec4fd2e9b38fcbb8be
 £
 ssrc/main/java/com/example/organizationEmployeeProjectManagement/security/service/impl/orgImpl/OrganizationImpl.java,a/c/ac09bfbe24c41b1f06ece88636627d420f151fd0
+¸
+‡src/main/java/com/example/organizationEmployeeProjectManagement/security/controller/empProjectController/EmployeeProjectController.java,b/f/bf894b8b708f4fbd1f20e49d58451df27facb0af

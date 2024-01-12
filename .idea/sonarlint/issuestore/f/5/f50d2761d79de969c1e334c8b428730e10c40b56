@@ -1,7 +1,21 @@
 
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(«ãøÿÿÿÿ
-L	java:S106"+Replace this use of System.out by a logger.(¤Öìıÿÿÿÿ8à“Â½´1
+^
+java:S4973&"<Strings and Boxed types should be compared using "equals()".(ÕÂÊ‡ùÿÿÿÿ8üİ°âÏ1
+^
+java:S4973,"<Strings and Boxed types should be compared using "equals()".(Á¢è—ÿÿÿÿÿ8ıİ°âÏ1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(«ãøÿÿÿÿ8ıİ°âÏ1
+L	java:S106"+Replace this use of System.out by a logger.(¤Öìıÿÿÿÿ8’Ş°âÏ1
+F	java:S106 "+Replace this use of System.out by a logger.(Ê¼†08”Ş°âÏ1
+L	java:S106'"+Replace this use of System.out by a logger.(ùü–£şÿÿÿÿ8”Ş°âÏ1
+L	java:S106)"+Replace this use of System.out by a logger.(İĞÂğşÿÿÿÿ8”Ş°âÏ1
+L	java:S106-"+Replace this use of System.out by a logger.(ÇçÜµúÿÿÿÿ8”Ş°âÏ1
+G	java:S106/"+Replace this use of System.out by a logger.(İ•ûà8•Ş°âÏ1
+F	java:S1062"+Replace this use of System.out by a logger.(½¨ó$8•Ş°âÏ1
+L	java:S1065"+Replace this use of System.out by a logger.(ùü–£şÿÿÿÿ8•Ş°âÏ1
+L	java:S1067"+Replace this use of System.out by a logger.(İĞÂğşÿÿÿÿ8•Ş°âÏ1
+L	java:S106:"+Replace this use of System.out by a logger.(ÇçÜµúÿÿÿÿ8–Ş°âÏ1
+G	java:S106<"+Replace this use of System.out by a logger.(İ•ûà8–Ş°âÏ1
 
-java:S1128"{Remove this unused import 'com.example.organizationEmployeeProjectManagement.security.dto.genericResponce.GenericResponse'.(ø»ùéşÿÿÿÿ8í“Â½´1
+java:S1128"{Remove this unused import 'com.example.organizationEmployeeProjectManagement.security.dto.genericResponce.GenericResponse'.(ø»ùéşÿÿÿÿ8—Ş°âÏ1
 b
-java:S1128"@Remove this unused import 'org.springframework.http.HttpStatus'.(íŸ¤Šúÿÿÿÿ8î“Â½´1
+java:S1128"@Remove this unused import 'org.springframework.http.HttpStatus'.(íŸ¤Šúÿÿÿÿ8˜Ş°âÏ1
